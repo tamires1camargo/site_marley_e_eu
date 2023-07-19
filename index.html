@@ -10,8 +10,139 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header class="header">
+        <div class="header__container">
+            <div class="header__logo">
+                <img src="./src/images/logo.jpg" alt="pipoca">                
+            </div>
+            <ul class="header__links">
+                <li class="header__links__item">
+                    <a href="https://www.adorocinema.com/filmes/filme-126412/" class="button">ASSISTA AGORA</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
     <h1>Filme de hoje: Marley & Eu</h1>
     <section class="hero"></section>
     <h2 class="title--big">Um filme para toda família, venha assistir e se emocionar!</h2>
+
+    <section class="shows">
+        <nav class="shows__tabs">
+            <button data-tab-button="cenas" class="shows__tabs__button shows__tabs__button--is-active">
+                Cenas do Filme
+            </button>
+            <button data-tab-button="elenco" class="shows__tabs__button">
+                Elenco
+            </button>
+            <button data-tab-button="filmes_semelhantes" class="shows__tabs__button">
+                Filmes Semelhantes
+            </button>
+        </nav>
+        <ul data-tab-id="cenas" class="shows__list shows__list--is-active">
+            <li class="shows__list__item">
+                <img src="./src/images/cenas/destaque-marley.jpg" alt="Marley">
+            </li>
+            <li class="shows__list__item">
+                <img src="./src/images/cenas/filmes_Marley.jpg" alt="Marleyfilme">
+            </li>
+            <li class="shows__list__item">
+                <img src="./src/images/cenas/marleybebe.jpg" alt="Bebe">
+            </li>
+            <li class="shows__list__item">
+                <img src="./src/images/cenas/marleyecrianca.jpg" alt="criança">
+            </li>
+            <li class="shows__list__item">
+                <img src="./src/images/cenas/marleynocampo.jpg" alt="Campo">
+            </li>
+            <li class="shows__list__item">
+                <img src="./src/images/cenas/owen-wilson.jpg" alt="owen">
+            </li>
+        </ul>
+        <ul data-tab-id="elenco" class="shows__list">
+            <li class="shows__list__item">
+                <img src="./src/images/elenco/owen_wilson.jpg" alt="Owen Wilson">
+                <h3>Owen Wilson</h3>
+            </li>
+            <li class="shows__list__item">
+                <img src="./src/images/elenco/nathan_gamble.jpg" alt="Nathan Gamble">
+                <h3>Nathan Gamble</h3>
+            </li>
+            <li class="shows__list__item">
+                <img src="./src/images/elenco/alan_arkin.jpg" alt="Alan Arkin">
+                <h3>Alan Arkin</h3>
+            </li>
+            <li class="shows__list__item">
+                <img src="./src/images/elenco/jennifer_aniston.jpg" alt="Jennifer Aniston">
+                <h3>Jennifer Aniston</h3>
+            </li>
+            <li class="shows__list__item">
+                <img src="./src/images/elenco/kathleen_turner.jpg" alt="Kathleen Turner">
+                <h3>Kathleen Turner</h3>
+            </li>
+            <li class="shows__list__item">
+                <img src="./src/images/elenco/lucy_merriam.jpg" alt="Lucy Merriam">
+                <h3>Lucy Merriam</h3>
+            </li>
+        </ul>
+        <ul data-tab-id="filmes_semelhantes" class="shows__list">
+            <li class="shows__list__item">
+                <img src="./src/images/semelhantes/ameninaeoporquinho.jpg" alt="porquinho">
+            </li>
+            <li class="shows__list__item">
+                <img src="./src/images/semelhantes/benji.jpg" alt="Benji">
+            </li>
+            <li class="shows__list__item">
+                <img src="./src/images/semelhantes/procurasegonker.jpg" alt="Gonker">
+            </li>
+            <li class="shows__list__item">
+                <img src="./src/images/semelhantes/quatrovidas.jpg" alt="Quatro vidas">
+            </li>
+            <li class="shows__list__item">
+                <img src="./src/images/semelhantes/resgatederuby.jpg" alt="Resgate de Ruby">
+            </li>
+            <li class="shows__list__item">
+                <img src="./src/images/semelhantes/victoriaemisterio.jpg" alt="Victoria e misterio">
+            </li>
+        </ul>
+    </section>
+
+
+<script src="./dist/js/main.js"></script>
+
 </body>
+
+<footer class="footer">
+    <div class="footer__container">
+        <img class="footer__logo" src="./src/images/pipoca.jpg" alt="pipoca">
+        <ul class="footer__links">
+            <li class="footer__links__item">
+                <div class="language-selector">
+                    <img src="./src/images/globo.jpg" alt="globo">
+                    <select>
+                        <option>English</option>
+                        <option selected>Português</option>
+                    </select>
+                </div>
+            </li>
+            <li class="footer__links__item">
+                <a href="#" class="text--small">Termos e Condições de Uso</a>
+            </li>
+            <li class="footer__links__item">
+                <a href="#" class="text--small">Política de Privacidade</a>
+            </li>
+            <li class="footer__links__item">
+                <a href="#" class="text--small">Proteção de Dados no Brasil</a>
+            </li>
+            <li class="footer__links__item">
+                <a href="#" class="text--small">Anúncios personalizados</a>
+            </li>
+        </ul>
+        <p class="text--small">
+            2023 TCS Filmes. Todos os direitos reservados. Conteúdo sujeito a disponibilidade.
+        </p>
+    </div>
+</footer>
+
+
 </html>
