@@ -1,5 +1,70 @@
-$bgColor: green;
+@use 'hero';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$corDeFundo: #ffeaa7;
+$corTextoPrincipal:#583a28;
+$corTextoSecundario:#9a715f;
+$corTextoLink: #002a93;
+$fontePrincipal: 'Poppins', sans-serif;
 
 body {
-    background-color: $bgColor;
+    background-color: $corDeFundo;
+}
+
+h1 {
+    margin-top: 20px;
+    margin-bottom: 22px;
+    margin-left: 26px;
+    font-family: $fontePrincipal;
+    font-size: 44px;
+}
+
+h2 {
+    margin-top: 38px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+@mixin title($fontSize: 40px) {
+    @include text($fontSize);
+    color: $corTextoPrincipal;
+    font-family: $fontePrincipal;
+}
+
+@mixin text($fontSize: 16px) {
+    font-size: $fontSize;
+    line-height: $fontSize + 10px;
+    color: $corTextoSecundario;
+    font-family: $fontePrincipal;
+}
+
+.text--big {
+    @include text(18px);
+}
+
+.text {
+    @include text;
+}
+
+.text--small {
+    @include text(12px);
+}
+
+.title {
+    @include title;
+}
+
+.title--big {
+    @include title(44px);
+}
+
+.link-text {
+    @include text(18px);
+    color: $corTextoLink;
+    text-decoration: underline;
 }
